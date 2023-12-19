@@ -44,7 +44,7 @@ for obj in json_objects:
                 print(f"The missing keys for type '{json_data.get('typ')}' are:")
                 print(', '.join(missing_keys))  # Print the missing keys
             else:
-                print("Nothing is missing.")
+                print(f"Nothing is missing for type '{json_data.get('typ')}'.")
             print()  # Print an empty line for separation
     except json.JSONDecodeError:
         pass  # Ignore non-JSON lines
